@@ -1,0 +1,14 @@
+h5{
+    color:olive
+}
+h6{
+    background-color: rgb(120, 211, 16);
+}
+#bg {
+    background-color: tomato;
+}
+.size {
+    font-size: 41px;
+    color:azure;
+    background-color: darkred;
+}
