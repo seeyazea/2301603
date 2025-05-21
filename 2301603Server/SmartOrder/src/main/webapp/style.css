@@ -1,0 +1,336 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Nanum Barun Gothic';
+}
+
+a {
+	text-decoration-line: none;
+	color: inherit; /* 링크의 색상 제거 */
+}
+
+.header_container {
+	display: flex;
+	align-items: center; /* 세로 중앙 정렬 */
+	justify-content: center;
+	width: 100vw;
+	padding: 0px;
+	background-color: #dbdbdb; /* 배경색 추가 (선택 사항) */
+	position: relative;
+}
+
+.header_content {
+	display: flex;
+	align-items: center; /* 세로 중앙 정렬 */
+}
+
+.header_content img {
+	height: 100px;
+}
+
+.header_content label {
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 10px; /* 이미지와 간격 조정 */
+}
+
+.manager {
+	width: 90px;
+	position: absolute;
+	right: 0;
+}
+
+#menuArea {
+	background: #fff200;
+}
+
+#menuArea ul {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 80vw;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	background: #fff200;
+	margin: 0 auto;
+}
+
+#menuArea li {
+	flex: 1;
+	min-width: 100px;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#menuArea li:hover {
+	background: #FF7F27;
+}
+
+.productList {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	padding: 20px;
+}
+
+.productList li {
+	list-style: none;
+	width: 23vw;
+	margin: 10px;
+	text-align: center;
+	padding: 10px;
+	background: #f5f5f5;
+	border-radius: 10px;
+}
+
+.productList li:hover {
+	background: #C8EBFA;
+}
+
+.item-container {
+	text-align: center;
+}
+
+.productImg {
+	text-align: center;
+}
+
+.productImg img {
+	width: 130px;
+	height: 150px;
+}
+
+.productName {
+	text-align: center;
+}
+
+.price {
+	text-align: right;
+	display: block;
+}
+
+.footer {
+	position: fixed;
+	align-items: center; /* 세로 중앙 정렬 */
+	justify-content: center; /* 가로 중앙 정렬 */
+	width: 100vw;
+	height: 150px;
+	background: #00ffff;
+	bottom: 0;
+	display: flex;
+}
+
+.cartList {
+	display: flex;
+	height: 100%;
+	width: 80vw;
+	background: #cccccc;
+	overflow: hidden;
+}
+
+.cartList ul {
+	display: flex;
+	flex-wrap: nowrap; /* 줄 바꿈 방지 */
+	justify-content: flex-start;
+	align-items: center;
+	width: 100vw;
+	height: 100%;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	background: #D9D9D9;
+	overflow-x: auto; /* 가로 스크롤 생성 */
+	overflow-y: hidden;
+	white-space: nowrap; /* 줄 바꿈 방지 */
+	scrollbar-width: thin; /* 스크롤바 크기 조절 (Firefox) */
+}
+
+.cartList ul::-webkit-scrollbar {
+	height: 8px; /* 스크롤바 높이 조정 */
+}
+
+.cartList ul::-webkit-scrollbar-thumb {
+	background: #888; /* 스크롤바 색상 */
+	border-radius: 4px;
+}
+
+.cartList ul::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+.cartList li {
+	flex: 0 0 auto;
+	width: 120px;
+	align-items: center;
+	height: 95%;
+	padding: 5px;
+	margin: 5px;
+	text-align: center;
+	font-weight: bold;
+	border: 1px solid #000000;
+	background: #fff;
+}
+/* 하단 결제 버튼 */
+.pay {
+	display: flex;
+	width: 15vw;
+	height: 100%;
+	background-color: #E067E2;
+	color: #fff;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+	font-weight: bold;
+	cursor: pointer;
+	right: 0px;
+	padding: 5px 5px;
+	text-align: center;
+}
+
+.pay:hover {
+	background-color: blue;
+}
+
+.amount {
+	width: 20vw;
+	height: 100%;
+	background: #660010;
+}
+
+.cartProduct {
+	display: flex;
+	height: 100%;
+	position: relative;
+}
+
+.cartProductImg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.cartProductImg img {
+	width: 100%;
+	height: 100%;
+}
+
+.cartProductDel {
+	position: absolute;
+	right: 3px;
+	font-size: 15px;
+}
+
+.lblPayTxt {
+	display: flex;
+	text-align: center;
+	font-size: 15px;
+	align-items: center;
+	height: 30%;
+	background: #B84A5B;
+}
+
+.lblPayAmountTxt {
+	text-align: right;
+	padding-right: 5px;
+	font-weight: bold;
+	font-size: 28px;
+	height: 40%;
+	background: #B84A5B;
+}
+
+.lblPayAmountTxt label {
+	width: 100%;
+	color: #FFF200;
+}
+
+.lblPayCancel {
+	display: flex;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	align-items: center;
+	height: 30%;
+}
+/* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/
+@media all and (min-width:480px) and (max-width:767px) {
+	.header_container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.productList li {
+		width: 45%;
+	}
+	.footer {
+		height: 110px;
+	}
+	.cartList li {
+		width: 90px;
+	}
+	.cartProductDel {
+		right: 0px;
+		font-size: 0.9rem;
+	}
+	.lblPayTxt {
+		font-size: 0.8rem;
+	}
+	.lblPayAmountTxt {
+		font-size: 0.9rem;
+	}
+	.lblPayCancel {
+		font-size: 1rem;
+	}
+	.pay {
+		width: 20%;
+		font-size: 2.1rem;
+	}
+}
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media all and (max-width:479px) {
+	.header_container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.header_content img {
+		height: 80px;
+	}
+	.header_content label {
+		font-size: 1rem;
+		font-weight: bold;
+		margin-left: 5px;
+	}
+	.productList li {
+		width: 90%;
+	}
+	.footer {
+		height: 90px;
+	}
+	.cartListli {
+		width: 70px;
+	}
+	.cartProductDel {
+		right: 0px;
+		font-size: 0.7rem;
+	}
+	.lblPayTxt {
+		font-size: 0.7rem;
+	}
+	.lblPayAmountTxt {
+		font-size: 0.8rem;
+	}
+	.lblPayCancel {
+		font-size: 0.8rem;
+	}
+	.pay {
+		width: 20%;
+		font-size: 1.5rem;
+	}
+}
