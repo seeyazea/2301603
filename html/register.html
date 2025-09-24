@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #87CEEB, #FFC0CB);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .register-container {
+            background-color: #F8F8FF;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .register-container h2 {
+            color: #333; /* Dark gray color */
+            margin-bottom: 20px;
+        }
+
+        .social-signup {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .social-signup i {
+            font-size: 47px;
+            cursor: pointer;
+        }
+
+        .register-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .register-form label {
+            margin-bottom: 8px;
+            text-align: left;
+            color: #333; /* Dark gray color */
+        }
+
+        .register-form input {
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .password-info {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .password-info p {
+            color: #333; /* Dark gray color */
+            margin-bottom: 5px;
+        }
+
+        .password-info ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .password-info li {
+            margin-bottom: 5px;
+        }
+
+        .register-form button {
+            padding: 10px;
+            background-color: #369ac9;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .register-form button:hover {
+            background-color: #555;
+        }
+
+        .signup-link {
+            margin-top: 20px;
+            text-align: center; /* Center the text */
+        }
+
+        .signup-link p {
+            margin-bottom: 10px;
+            color: #333; /* Dark gray color */
+        }
+
+        .signup-link a {
+            color: #333333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="register-container">
+        <div class="social-signup">
+            <i class="fab fa-google" title="Sign up with Google"></i>
+            <i class="fab fa-facebook-square" title="Sign up with Facebook"></i>
+            <i class="fab fa-apple" title="Sign up with Apple"></i>
+        </div>
+
+        <h2>Or sign up with email</h2>
+
+        <form class="register-form" action="https://example.com/signup" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+
+            <div class="password-info">
+                <p>Make sure your password:</p>
+                <ul>
+                    <li>is 6 characters or longer</li>
+                    <li>has no spaces</li>
+                </ul>
+            </div>
+
+            <button type="submit">Sign up, it's free</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

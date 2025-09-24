@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #87CEEB, #FFC0CB);
+        }
+
+        .background-welcome {
+            position: fixed;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+        }
+
+        .background-welcome h1 {
+            font-size: 3em;
+            margin: 0;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .login-container {
+            background-color: #F8F8FF;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .login-container h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .social-login {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .social-login i {
+            font-size: 40px;
+            cursor: pointer;
+            color: #369ac9;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-form label {
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        .login-form input {
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .forgot-password {
+            text-align: right;
+            margin-bottom: 10px;
+        }
+
+        .login-form button {
+            padding: 15px;
+            background-color: #369ac9;
+            color: #fff;
+            border: none;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background-color: #607cf7;
+        }
+
+        .signup-link {
+            margin-top: 10px;
+        }
+
+        .signup-link p {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .signup-link a {
+            color: #369ac9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="background-welcome">
+        <h1>Welcome</h1>
+    </div>
+
+    <div class="login-container">
+        <h2>Log in to have fun and learn faster</h2>
+        <div class="social-login">
+            <i class="fab fa-google" title="Log in with Google"></i>
+            <i class="fab fa-facebook-square" title="Log in with Facebook"></i>
+            <i class="fab fa-apple" title="Log in with Apple"></i>
+        </div>
+
+        <h2>or</h2>
+
+        <form class="login-form" action="file:///C:/%ED%99%94%EB%A9%B4%EA%B5%AC%ED%98%842.2/week_13/%D0%AD%D0%BA%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD/home.html" method="post">
+            <label for="username">Username or Email:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="forgot-password">
+                <a href="#" title="I forgot my password!">I forgot my password!</a>
+            </div>
+
+            <button type="submit">Log in</button>
+        </form>
+
+        <div class="signup-link">
+            <p>Don’t have an account? <a href="register.html" title="Sign up now!">Sign up now!</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
